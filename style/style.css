@@ -1,35 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #131417;
+}
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 75px;
 }
 
 .box {
   width: 300px;
   height: 300px;
   padding: 10px;
-  background-color: bisque;
-  color: brown;
+  background-color: #363636;
+  border-radius: 10px;
+  border: #616060 solid 5px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.box h1 {
+  color: #22a779;
+  margin-bottom: 30px;
 }
 
 form {
-  flex-direction: column;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-form input {
-  width: 200px;
-  height: 30px;
+form button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 120px;
+  height: 40px;
+  border: #22a779 solid 5px;
+  border-radius: 10px;
+  background-color: #42dba6;
+  color: white;
+}
+
+.input-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  width: 100%;
+}
+.input-field input {
+  width: 60px;
+  height: 60px;
   margin: 5px 0;
+  border: #22a779 solid 5px;
+  border-radius: 10px;
+  background-color: #42dba6;
+  color: white;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.input-field input:-webkit-autofill,
+.input-field input:-webkit-autofill:hover,
+.input-field input:-webkit-autofill:focus,
+.input-field textarea:-webkit-autofill,
+.input-field textarea:-webkit-autofill:hover,
+.input-field textarea:-webkit-autofill:focus,
+.input-field select:-webkit-autofill,
+.input-field select:-webkit-autofill:hover,
+.input-field select:-webkit-autofill:focus {
+  border: #22a779 solid 5px;
+  -webkit-text-fill-color: white;
+  background-color: #42dba6;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.input-field select {
+  height: 60px;
+  width: 60px;
+  border: #22a779 solid 5px;
+  border-radius: 10px;
+  background-color: #42dba6;
+  -webkit-appearance: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 
 .result {
+  text-align: center;
   font-size: 30px;
   margin-top: 10px;
   width: 31px;
+  color: #22a779;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }/*# sourceMappingURL=style.css.map */

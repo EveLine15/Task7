@@ -48,24 +48,24 @@
 // 2) решить с помощью evel (https://developer.mozilla.org/...)
 
 //1)
-// const number1 = document.querySelector('#number1');
-// const number2 = document.querySelector('#number2');
-// const sign = document.querySelector('#signs')
-// const result = document.querySelector('#result');
-// const form = document.querySelector('form');
-// const button = document.querySelector('button');
+const number1 = document.querySelector('#number1');
+const number2 = document.querySelector('#number2');
+const sign = document.querySelector('#signs')
+const result = document.querySelector('#result');
+const form = document.querySelector('form');
+const button = document.querySelector('button');
 
-// form.addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     let answer = 0;
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let answer = 0;
     // if(sign.value == '+') answer = +number1.value + +number2.value;
     // if(sign.value == '-') answer = +number1.value - +number2.value;
     // if(sign.value == '/') answer = (+number1.value / +number2.value).toFixed(3);
     // if(sign.value == '*') answer = +number1.value * +number2.value;
 
-//     answer = eval(`${number1.value} ${sign.value} ${number2.value}`);
-//     result.textContent = answer;
-// });
+    sign.value == '/' ? answer = eval(`${number1.value} ${sign.value} ${number2.value}`).toFixed(3) : answer = eval(`${number1.value} ${sign.value} ${number2.value}`);
+    result.textContent = answer;
+});
 
 
 // Задание 5
